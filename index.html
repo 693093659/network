@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>主页</title>
+	<style type="text/css">
+		*{
+			padding: 0px;margin: 0px;
+		}
+		.nav{
+			width: 990px;
+			padding-left: 50px;
+			line-height: 50px;
+			padding-bottom: 10px;
+		}
+		.nav a:hover{
+			color: #D32F2F;
+		}
+		.sign-in a:hover{
+			color: #D32F2F;
+		}
+		.nav a{
+			font-size: 13px;
+			color: rgba(0,0,0,0.6);
+		}
+		.sign-in{
+			position: absolute;
+			right:50px;
+			top: 5px;
+		}
+		.log{
+			font-size: 13px;
+			line-height: 50px;
+		}
+		.reg{
+			padding-left: 20px;
+			font-size: 13px;
+			color: rgba(0,0,0,0.6);
+			line-height: 50px;	
+		}
+		.logo{
+			padding-left: 10%;
+			width: 90%;
+			font-weight: bold;
+			text-decoration: none;
+			background: unset;
+			font-size: 18px;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+		.box{
+			border-top: 2px solid #EDEDED;
+			width: 80%;
+			margin-left: 10%;
+			margin-top: 10px;
+			padding-top: 10px;
+		}
+		.label_h{
+			width: 18%;
+			display: inline-block;
+			text-align: center;
+		}
+		.label_s{
+			display: inline-block;
+			width: 15%;
+			text-align: center;
+		}
+		.label_l{
+
+			display: inline-block;
+			text-align: center;
+			width: 18%;
+		}
+		.label_b{
+			display: inline-block;
+			text-align: center;
+			width: 18%;
+		}
+		.label_a{
+			display: inline-block;
+			text-align: center;
+			width: 18%;
+		}
+		.logo a:hover{
+			color: #D32F2F;
+			border-bottom:2px solid #D32F2F ;
+		}
+		ul{
+			float: left;
+			list-style: none;
+			width: 102px;
+		}	
+		li{
+			overflow: hidden;
+			text-align: center;
+			line-height: 65px;
+		}
+		.l1{
+			display: block;
+			background-color: #F7F6F2;
+		}
+		.l2{
+			display: block;
+			background-color: #FCFCFA;
+		}
+		.content{
+			float: left;
+			padding-left: 10px;
+			width: 740px;
+			height: 389px;
+			position: relative;
+		}
+		#obj{
+			width: 740px;
+			height: 389px;
+		}
+		#prev{
+			position: absolute;
+			top: 40%;
+			font-size: 50px;
+			color: #fff;
+			background-color:rgba(0,0,0,0.4);
+			display: none;
+		}
+		#next{
+			position: absolute;
+			top: 40%;
+			right: 0px;
+			font-size: 50px;
+			color: #fff;
+			background-color:rgba(0,0,0,0.4);
+			display: none;
+		}
+		.content:hover #next{
+			display: block;
+		}
+		.content:hover #prev{
+			display: block;
+		}
+		.title{
+			margin-bottom: 20px;
+			padding-left: 50px;
+			height: 85px;
+
+		}
+		.title img{
+			width: 70px;
+			height: 70px;
+			float: left;
+			position: relative;
+
+		}
+		.ta1{
+			float: left;
+			padding-left: 5px;
+			padding-top: 13px;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgba(0,0,0,0.7);	
+			word-spacing: 50px;
+			letter-spacing:3px;
+		}
+		#search{
+        width: 78px;
+        height: 42px;
+        float: left;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+        margin-top: 13px;
+    }
+    .input1{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 40px;
+        float: left;
+        background-image: url(images/search.PNG);
+        background-repeat: no-repeat;
+        background-size: 23px;
+        background-position:5px center;
+        padding:0 0 0 37px	;
+        margin-left: 17%;
+        margin-top: 13px;
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="nav">
+		<a href="https://www.qidian.com/">起点小说</a>
+		<a href="http://www.zongheng.com/">纵横小说</a>
+		<a href="https://b.faloo.com/">飞卢小说</a>
+		</div>
+		<div class="sign-in">
+			<a href="login.html" class="log">登录</a>
+			<a href="register.html" class="reg">注册</a>
+		</div>
+		<div class="title">
+			<a href="index.html"><img src="images/title_bg.jpg"></a>
+			<a href="index.html" class="ta1">玄侠小说网</a>
+		<div>
+		<input type="text" name="search" placeholder="请输入关键字" class="input1">
+        <div id="search">搜索</div> 
+		</div>
+		</div>
+		<div class="logo">
+			<a href="" class="label_s">作品分类</a>
+			<a href="index.html" class="label_h">首页</a>
+			<a href="rank.php" class="label_l">排行</a>
+			<a href="book.php" class="label_b">书库</a>
+			<a href="author_login.html" class="label_a">作者专区</a>
+		</div>
+		<div class="box">
+		<div class="sidebar1">
+			<ul class="u1">
+				<li><a href="" class="l1">玄幻</a></li>
+				<li><a href="" class="l2">奇幻</a></li>
+				<li><a href="" class="l1">武侠</a></li>
+				<li><a href="" class="l2">仙侠</a></li>
+				<li><a href="" class="l1">都市</a></li>
+				<li><a href="" class="l2">现实</a></li>
+			</ul>
+			<ul class="u2">
+				<li><a href="" class="l1">军事</a></li>
+				<li><a href="" class="l2">历史</a></li>
+				<li><a href="" class="l1">游戏</a></li>
+				<li><a href="" class="l2">体育</a></li>
+				<li><a href="" class="l1">科幻</a></li>
+				<li><a href="" class="l2">悬疑</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<a href="wuxia.php" id="h" ><img id=obj src ="images/bg.jpg" ></a>
+			<a href="javascript:;" id="prev"><</a>
+    		<a href="javascript:;" id="next">></a>
+		</div>
+		</div>
+	</div>
+<script language =javascript >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=4000;	
+var arr=new Array();
+var hre=new	Array();
+hre[0]="wuxia.php";
+hre[1]="qiji.php";
+hre[2]="zoulin.php";
+hre[3]="meijushijie.php";
+hre[4]="shenhua.php";
+arr[0]="images/wuxia.jpg";
+arr[1]="images/qiji.jpg";
+arr[2]="images/zoulin.jpg";
+arr[3]="images/meiju.jpg";
+arr[4]="images/shenhua.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{	
+var obj=document.getElementById("obj");
+var h=document.getElementById("h");
+if (curIndex==arr.length-1)
+{
+curIndex=0;
+}
+else
+{
+curIndex+=1;
+}
+obj.src=arr[curIndex];
+h.href=hre[curIndex];
+}
+var num=0;
+function fnTab(){
+	obj.src = arr[num];
+	h.href=hre[num];
+}
+fnTab();
+next.onclick=function(){
+	num++;
+	if(num==arr.length)
+		num=0;
+	fnTab();
+}
+prev.onclick=function(){
+	num--;
+	if(num==-1)
+		num=arr.length-1;
+	fnTab();
+}
+</script>
+</body>
+</html>

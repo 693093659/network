@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>登录界面</title>
+	<style type="text/css">
+	*{
+		padding: 0px;margin: 0px;
+	}
+	.container{
+		width: 100%;
+		background-image: url('images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size:100%;
+		text-align: center;
+		height: 754px;	
+		background-size: 100% 800px;
+	}
+	.box{
+		position: relative;
+		top: 37%;
+		left: 40%;
+		width: 300px;
+		height: 200px;
+		padding-top: 40px;
+
+	}
+	h1{
+		padding-bottom: 15px;
+
+	}
+	.user{
+		margin:5px 0px;
+		list-style: none;
+		height: 36px;
+		width: 400px;
+		display: inline-block;	
+	}
+	.pwd{
+		width: 400px;
+		list-style: none;
+		height: 36px;
+		margin:5px 0px;
+		display: inline-block;
+	}
+	.uli{
+		border-style:none;
+		background-color: #1D5F89;
+		height: 35px;
+		float: left;
+		width: 250px;
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.pli{
+		height: 35px;
+		border-style: none;
+		background-color: #1D5F89;
+		float: left;
+		width: 250px;
+		border-bottom-right-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+	.submit{
+		border-style:none;
+		line-height: 32px;
+		margin-top: 20px;
+		width: 140px;
+		list-style-type: none;
+		background: unset;
+		background-image: url('images/button.PNG');
+		background-repeat: no-repeat;
+		background-size: 140px;
+		color: #fff;
+		text-align: center;
+		position: relative;
+		left: -10px;
+
+	}
+	.s1{
+		width: 20px;
+		background-image: url('images/user.PNG');
+		height: 35px;
+		background-position: 10px;
+		background-repeat: no-repeat;
+		background-size: 22px;
+		background-color: #1D5F89;
+		padding-right: 25px;
+		float: left;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+	.s2{
+		width: 20px;
+		background-image: url('images/password.PNG');
+		height: 35px;
+		background-position: 10px;
+		background-repeat: no-repeat;
+		background-size: 22px;
+		background-color: #1D5F89;
+		float: left;
+		padding-right: 25px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;	
+	}
+	.reg{
+		text-decoration: none;
+		display: inline-block;
+		margin-left: 70px;
+		font-size: 14px;
+		color: #1578D5;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="box">
+	<h1>欢迎	</h1>
+	<form action="login.php" method="POST" onclick="return check();" name="form">
+		<ul>
+		<li class="user"><span class="s1"></span><input type="text" name="username" class="uli"></li>
+		<li class="pwd"><span class="s2"></span><input type="password" name="password" class="pli"></li>
+		</ul>
+		<input type="submit" name="submit" value="登录" class="submit">
+		<a href="register.html" class="reg">立即注册</a>
+	</form>
+	</div>
+	</div>
+</body>
+</html>

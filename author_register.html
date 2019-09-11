@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<style type="text/css">
+	*{
+		margin: 0px;padding: 0px;
+	}
+		.box1{
+			background-image: url('images/regbg.jpg');
+			background-size: 1580px 745px;
+			height: 745px;
+			background-repeat:  no-repeat;
+		}
+		.box2{
+			padding-left: 650px;
+			padding-top: 330px;
+		}
+		.onsubmit{
+			color: #fff;
+			background-color: #D32F2F;
+			text-align: center;
+			width: 80px;
+			line-height: 30px;
+			border-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+	<h1>新作者,欢迎注册</h1>
+	<h2>享受小说世界的美好</h2>
+	<form action="register.php" method="POST" onclick="return check();" name="form">
+	<p><input type="text" name="name" placeholder="用户名"></p>
+	<p><input type="text" name="username" placeholder="账号"></p>
+	<p><input type="text" name="password" placeholder="密码"></p>
+	<p><input type="submit" name="submit" class="onsubmit"></p>
+	</form>
+	</div>
+</div>
+</body>
+</html>
